@@ -1,0 +1,42 @@
+﻿@model GestaoComercioPISO.WebSite.Models.ClienteRovian
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ClienteRovian</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeCompletoRazaoSocial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeCompletoRazaoSocial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ApelidoNomeFantasia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApelidoNomeFantasia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CPFCNPJ)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CPFCNPJ)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
